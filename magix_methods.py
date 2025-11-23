@@ -9,7 +9,8 @@ class Book:
         return f"{self.title} is a {self.pages} paged book written by {self.author}"
     
     def __repr__(self):
-        return f"Book('{self.title}, {self.author},{self.pages}')"
+        #return f"Book('{self.title}, {self.author},{self.pages}')"
+        return f"Book(title='{self.title}', author='{self.author}', pages={self.pages})"
     
 
 book1 = Book("The Power of Habit", "Charles Duhigg", 371)
