@@ -9,5 +9,10 @@ class Book:
         return f"{self.title} is a {self.pages} paged book written by {self.author}"
     
     def __repr__(self):
-        return f"Item('{self.title}, {self.author},{self.pages}')"
+        return f"Book('{self.title}, {self.author},{self.pages}')"
+    
+
+book1 = Book("The Power of Habit", "Charles Duhigg", 371)
+print(str(book1))     # Calls __str__
+print(repr(book1))    # Calls __repr__
     
