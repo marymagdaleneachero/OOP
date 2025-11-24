@@ -9,3 +9,7 @@ class Rectangle(Shape):
         
     def calculate_area(self):
         return self.length * self.width
+    
+
+rect = Rectangle(5, 3)
+print(rect.calculate_area()) 
